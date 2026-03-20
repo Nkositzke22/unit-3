@@ -1,0 +1,13 @@
+For my Lab 2 map, I am planning to create a "Climate State of the Union" chloropleth map. It will take data from Google Earth Engine averaged over the calendar year 2025 in the following attributes
+
+Mean Annual Temp (ERA5-Land): The average air temperature (converted from Kelvin to Celsius).
+
+Total Annual Precip (CHIRPS): The cumulative rainfall in millimeters.
+
+Annual Median NDVI (MODIS): A measure of vegetation health, using the median to avoid cloud-contaminated outliers.
+
+Total Burned Area (MODIS): Calculated by summing the area of all pixels flagged as "burned" in 2025.
+
+Population Density (GPW v4): Using the most recent high-resolution UN-adjusted count.
+
+50 enumeration areas, 5 attributes
