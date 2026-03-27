@@ -1,7 +1,11 @@
 /*Add CSS styles here*/
 /*Create style for main header*/
-.circles {
-    fill: rgba(70, 130, 180, 0.7); /* A nice steel blue with some transparency */
-    stroke: #000;
-    stroke-width: 1.5px;
+.regions {
+    fill: #f9f9f9;
+    stroke: #333;
+    stroke-width: 0.5px;
+}
+
+.regions:hover {
+    fill: #ffd700; /* Makes states highlight when you hover! */
 }
