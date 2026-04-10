@@ -1,11 +1,56 @@
 /*Add CSS styles here*/
-/*Create style for main header*/
+
+/* Styling for the map features */
 .regions {
-    fill: #f9f9f9;
     stroke: #333;
     stroke-width: 0.5px;
 }
 
+/* Hover effect for map */
 .regions:hover {
-    fill: #ffd700; /* Makes states highlight when you hover! */
+    fill: #ffd700; 
+}
+
+/* Map container */
+.map {
+    float: left; 
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+/* Radar chart container */
+.chart {
+    float: right; 
+    background-color: rgba(128,128,128,0.05); 
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+
+/* Radar chart grid lines */
+.gridLine {
+    pointer-events: none; 
+    stroke: #999;
+    stroke-width: 0.5px;
+}
+
+/* Labels for radar chart spokes */
+.chartTitle {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    fill: #333;
+}
+
+/* Lines for radar chart spokes */
+.axis line {
+    stroke: #999;
+    stroke-width: 1px;
+}
+
+/* Title for radar chart */
+.chartTitle {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    fill: #333;
 }
