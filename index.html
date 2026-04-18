@@ -1,28 +1,27 @@
-<!DOCTYPE html>                                                                             <!--this explains that this is an html document-->
-<html lang="en">                                                                            <!--this explains that it's in English-->
-    <head>                                                                                  <!--contains all behind-the-scenes setup for my page-->
-        <meta charset="utf-8">                                                              <!--sets common character encoding-->
-        <meta name="viewport" content="width=device-width">                                 <!--makes the webpage width match device screen width-->
-            <title>G575-Unit 2 Activity 5</title>                                           <!--This is the metadata title-->
-
-         <link rel="stylesheet" href="lib/dist/leaflet.css">                                <!--loads leaflet style sheet first, because that's our primary stylesheet-->
-        
-        <link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html>                                                                             <html lang="en">                                                                            <head>                                                                                  <meta charset="utf-8">                                                              <meta name="viewport" content="width=device-width">                                 <title>G575-Unit 2 Activity 5</title>                                           <link rel="stylesheet" href="lib/dist/leaflet.css">                                <link rel="stylesheet" href="css/style.css">
         
     </head>
 
     <body>
-        <h1></h1>                                                                           <!--This is the title that appears on the page-->
-        <h2></h2>
-
-
-
+        <h1 style="text-align: center; font-family: sans-serif;">Climate State of the Union</h1> 
+        <h2 style="text-align: center; font-family: sans-serif; color: #666;">2025 Environmental Metrics</h2>
 
         <script type="text/javascript" src="lib/d3.v7.js"></script>
 
-        <script type="text/javascript" src="js/main.js"></script>                           <!--links to my main javascript page-->
+        <script type="text/javascript" src="js/main.js"></script>                           <script type="text/javascript" src="lib/topojson.js"></script>
 
-        <script type="text/javascript" src="lib/topojson.js"></script>
+        <div id="description" style="margin: 20px auto; max-width: 90%; font-family: sans-serif; line-height: 1.6;">
+            <p>
+                This interactive dashboard visualizes key environmental and climate variables across the United States for the year 2025. 
+                To ensure a fair comparison between states of vastly different sizes and populations, the data has been normalized. 
+                Rather than showing raw totals, metrics like burned area are shown as a percentage of total state land area, and population 
+                is displayed as density per square mile. Climate variables such as temperature and precipitation have been converted to 
+                Standard units (Fahrenheit and Inches) for easier interpretation.
+            </p>
+            <p style="font-size: 0.9em; color: #555;">
+                <i>Data Source: Processed via <b>Google Earth Engine</b> using ERA5-Land, CHIRPS, MODIS, and GPWv411 datasets.</i>
+            </p>
+        </div>
 
     </body>
 </html>

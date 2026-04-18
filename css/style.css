@@ -1,14 +1,19 @@
-/*Add CSS styles here*/
+/* style.css v1.5 */
 
 /* Styling for the map features */
 .regions {
-    stroke: #333;
+    /* Increased opacity and stroke-width for clearer boundaries */
+    stroke: #636363; 
     stroke-width: 0.5px;
+    /* Optional: ensures lines stay crisp on high-res screens */
+    vector-effect: non-scaling-stroke; 
 }
 
 /* Hover effect for map */
 .regions:hover {
     fill: #ffd700; 
+    stroke: #000;
+    stroke-width: 1.5px;
 }
 
 /* Map container */
@@ -16,6 +21,7 @@
     float: left; 
     border: 1px solid #ccc;
     margin-left: 20px;
+    background-color: #f9f9f9; /* Light background helps the state colors pop */
 }
 
 /* Radar chart container */
@@ -34,9 +40,10 @@
 }
 
 /* Labels for radar chart spokes */
+/* Note: Consolidated the duplicate .chartTitle rules from v1 */
 .chartTitle {
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 1.2em;
     font-weight: bold;
     fill: #333;
 }
@@ -47,10 +54,20 @@
     stroke-width: 1px;
 }
 
-/* Title for radar chart */
-.chartTitle {
+/* Container for the map to allow absolute positioning of children */
+.map-container {
+    position: relative;
+    float: left;
+}
+
+.dropdown {
+    position: absolute;
+    top: 25px;
+    left: 32px;
+    z-index: 10; /* Ensures it stays on top of the map */
+    padding: 5px;
     font-family: sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    fill: #333;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
